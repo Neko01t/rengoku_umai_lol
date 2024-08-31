@@ -1,44 +1,28 @@
-/* styles.css */
 body {
+    background: none;
+    /* Hide background initially */
+    transition: background 1s ease;
+    /* Smooth transition for background appearance */
     margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #ff3b3b, #ffd966, #f1c232, #cc0000, #990000);
-    background-size: 400% 400%;
-    animation: gradientShift 10s ease infinite;
-    perspective: 1000px;
-    /* Creates a 3D effect by defining the perspective */
-}
-
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    100% {
-        background-position: 0% 0%;
-    }
 }
 
 .container {
+    visibility: hidden;
+    /* Hide initially */
     position: relative;
-    /* width: 150px; */
-    height: 150px;
+    /* height: 150px; */
+    width: 150px;
 }
 
 .donut {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    /* Ensures 3D transforms are applied to the image */
     animation: spin 4s linear infinite;
-    /* Continuous rotation */
 }
 
 @keyframes spin {
@@ -48,13 +32,5 @@ body {
 
     100% {
         transform: rotateZ(360deg);
-    }
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    .container {
-        width: 100px;
-        height: 100px;
     }
 }
