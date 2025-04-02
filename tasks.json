@@ -1,0 +1,40 @@
+{
+    "tasks": [
+        {
+            "task": "Water the plants"
+        },
+        {
+            "task": "Check soil moisture"
+        },
+        {
+            "task": "Inspect for pests"
+        },
+        {
+            "task": "Prune the damaged leaves"
+        },
+        {
+            "task": "Harvest ripe vegetables"
+        },
+        {
+            "task": "Clear weeds from the farm"
+        },
+        {
+            "task": "Refill the compost bin"
+        }
+    ],
+    "completed": [],
+    "upcoming": [
+        {
+            "task": "Apply fertilizer"
+        },
+        {
+            "task": "Check irrigation system"
+        },
+        {
+            "task": "Plant new saplings"
+        },
+        {
+            "task": "Test soil pH levels"
+        }
+    ]
+}
